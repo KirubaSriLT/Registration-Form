@@ -1,0 +1,102 @@
+<html>
+    <head>
+        <title>Registration form</title>
+        <style>
+           body{
+           background-image:linear-gradient(to right,blue,rgb(202, 73, 202));
+            }
+            table{
+                background-color: white;
+                height: 250px;
+                width: 50%;
+            }
+        </style>
+        <script type="text/javascript">
+            function result(event)
+            {
+                event.preventDefault();
+                var gender=document.querySelector('input[name="gender"]:checked').value;
+                
+            var a=document.getElementById("name").value;
+            var b=document.getElementById("user").value;
+            var c=document.getElementById("email").value;
+            var d=document.getElementById("phone").value;
+            var e=document.getElementById("password").value;
+            var f=document.getElementById("cp").value;
+            
+            document.writeln("<br>",a);
+            document.writeln("<br>",b);
+            document.writeln("<br>",c);
+            document.writeln("<br>",d);
+            document.writeln("<br>",e);
+            document.writeln("<br>",f);
+            document.writeln("<br>",gender);
+            
+            }
+        </script>
+    </head>
+    <body>
+        <div id="div">
+            <form>
+                <h1 style="font-family:Playwrite ES,cursive" align="center">Registeration Form</h1>
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playwrite+ES:wght@100..400&family=Playwrite+NZ:wght@100..400&display=swap" rel="stylesheet">
+                <table align="center">
+                    <tr>
+                        <td>Full name<br>
+                        <input type="text" id="name" placeholder="Enter your name"></td>
+                        <td>Username<br>
+                            <input type="text" id="user" placeholder="Enter your username">
+            </td>
+
+                    </tr>
+                    <tr>
+                        <td>Email <br>
+                        <input type="email" id="email" placeholder="Enter your email"></td>
+                        <td>
+                            Phone Number<br>
+                            <input type="text" id="phone"maxlength="10" placeholder="Enter your mobile number">
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Password<br>
+                            <input type="password" id="password" placeholder="Enter your pw">
+                        </td>
+                        <td>
+                            Confirm Password<br>
+                            <input type="password" id="cp" placeholder="Enter Confirm password">
+                        </td>
+                    </tr>
+                    <div id="radio">
+                    <tr>
+                        <td>Gender<br>
+                        
+                        <input type="radio" id="m" value="male" name="gender" checked>
+                        <label for="m">Male</label>
+                        </td>
+                        <td><input type="radio" id="m" value="female" name="gender">
+                            <label for="f">Female</label>
+
+                        </td>
+                        <td><input type="radio" id="m" value="prefer not to say" name="gender">
+                            <label for="p">Prefer not to say</label>
+
+                        </td>
+
+                    </tr>
+                    </div>
+                    <tr>
+                        
+                       <td align="center"> <input type="button" Onclick="result(event)"id="but" value="Register"></td>
+                    </tr>
+                </table>
+
+            </form>
+        </div>
+       
+    </body>
+</html>
